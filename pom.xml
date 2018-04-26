@@ -267,6 +267,11 @@
                             <artifactId>checkstyle</artifactId>
                             <version>7.1</version>
                         </dependency>
+                        <dependency>
+                            <groupId>edu.uci.ics</groupId>
+                            <artifactId>crawler4j</artifactId>
+
+                        </dependency>
                     </dependencies>
                 </plugin>
             </plugins>

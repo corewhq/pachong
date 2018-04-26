@@ -427,11 +427,11 @@ public class WebCrawler implements Runnable {
                                 frontier.schedule(webURL);
                             } else {
                                 logger.debug(
-                                    "Not visiting: {} as per the server's \"robots.txt\" policy",
+                                    "Not visiting2: {} as per the server's \"robots.txt\" policy",
                                     webURL.getURL());
                             }
                         } else {
-                            logger.debug("Not visiting: {} as per your \"shouldVisit\" policy",
+                            logger.debug("Not visiting1: {} as per your \"shouldVisit\" policy",
                                          webURL.getURL());
                         }
                     }
@@ -494,12 +494,13 @@ public class WebCrawler implements Runnable {
                                         toSchedule.add(webURL);
                                     } else {
                                         logger.debug(
-                                            "Not visiting: {} as per the server's \"robots.txt\" " +
+                                            "Not visiting4: {} as per the server's \"robots.txt\" " +
                                             "policy", webURL.getURL());
                                     }
                                 } else {
                                     logger.debug(
-                                        "Not visiting: {} as per your \"shouldVisit\" policy",
+                                            //随便配的网址
+                                        "Not visiting3: {} as per your \"shouldVisit\" policy",
                                         webURL.getURL());
                                 }
                             }

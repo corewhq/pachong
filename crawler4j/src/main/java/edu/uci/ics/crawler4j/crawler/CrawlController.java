@@ -448,7 +448,7 @@ public class CrawlController {
             WebURL webUrl = new WebURL();
             webUrl.setURL(canonicalUrl);
             webUrl.setDocid(docId);
-            webUrl.setDepth((short) 0);
+            webUrl.setDepth((short) 2);
             if (robotstxtServer.allows(webUrl)) {
                 frontier.schedule(webUrl);
             } else {

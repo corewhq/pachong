@@ -35,17 +35,21 @@ public class CrawlConfig {
     /**
      * The folder which will be used by crawler for storing the intermediate
      * crawl data. The content of this folder should not be modified manually.
+     * 爬虫用来存储中间爬行数据的文件夹。此文件夹的内容不应手动修改。
      */
     private String crawlStorageFolder;
 
     /**
      * If this feature is enabled, you would be able to resume a previously
      * stopped/crashed crawl. However, it makes crawling slightly slower
+     * 如果启用此功能，您将能够恢复以前的功能。
+     *停止/崩溃爬行。然而，它使爬行稍慢。
      */
     private boolean resumableCrawling = false;
 
     /**
      * The lock timeout for the underlying sleepycat DB, in milliseconds
+     *
      */
     private long dbLockTimeout = 500;
 
